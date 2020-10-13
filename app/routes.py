@@ -1,5 +1,8 @@
-from app import app
+from flask import Blueprint
 
-@app.route('/')
-def index():
-  return '<h1>Sample App</h1>'
+bp = Blueprint('main', __name__, url_prefix='')
+
+
+@bp.route('/')
+def main():
+    return 'Calendar working'
