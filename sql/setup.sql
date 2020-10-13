@@ -1,4 +1,4 @@
-CREATE USER calendar_this WITH PASSWORD 'password' createdb;
+CREATE USER calendar_this WITH PASSWORD 'password' superuser;
 
 CREATE DATABASE calendar_this_dev WITH OWNER calendar_this;
 
